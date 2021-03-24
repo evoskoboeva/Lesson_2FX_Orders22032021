@@ -1,7 +1,5 @@
 package sample;
 
-import java.util.Date;
-
 public class Report {
     public static void main(String[] args) {
 
@@ -17,37 +15,37 @@ public class Report {
         //Использовать обработку исключительных ситуаций при работе с классами.
         //Реализовать проверки корректности значений для всех Setter'ов.
 
-        sample.OrdersPacage.Ingridient egg = new sample.OrdersPacage.Ingridient("egg", 1, sample.OrdersPacage.Measure.piece,"");
-        sample.OrdersPacage.Ingridient cheese = new sample.OrdersPacage.Ingridient("cheese", 100, sample.OrdersPacage.Measure.gram,"");
-        sample.OrdersPacage.Ingridient milk = new sample.OrdersPacage.Ingridient("milk", 100, sample.OrdersPacage.Measure.millilitre,"");
-        sample.OrdersPacage.Ingridient flour = new sample.OrdersPacage.Ingridient("flour", 50, sample.OrdersPacage.Measure.gram,"");
-        sample.OrdersPacage.Ingridient sugar = new sample.OrdersPacage.Ingridient("sugar",20, sample.OrdersPacage.Measure.gram,"");
-        sample.OrdersPacage.Ingridient waterHot = new sample.OrdersPacage.Ingridient("waterHot", 80, sample.OrdersPacage.Measure.millilitre,"");
-        sample.OrdersPacage.Ingridient teaGreen = new sample.OrdersPacage.Ingridient("teaGreen", 5, sample.OrdersPacage.Measure.gram,"");
-        sample.OrdersPacage.Ingridient coffee = new sample.OrdersPacage.Ingridient("coffee", 22, sample.OrdersPacage.Measure.gram,"");
+        /*Ingridient egg = new Ingridient("egg", 1, sample.OrdersPacage.Measure.piece,"");
+        Ingridient cheese = new Ingridient("cheese", 100, sample.OrdersPacage.Measure.gram,"");
+        Ingridient milk = new Ingridient("milk", 100, sample.OrdersPacage.Measure.millilitre,"");
+        Ingridient flour = new Ingridient("flour", 50, sample.OrdersPacage.Measure.gram,"");
+        Ingridient sugar = new Ingridient("sugar",20, sample.OrdersPacage.Measure.gram,"");
+        Ingridient waterHot = new Ingridient("waterHot", 80, sample.OrdersPacage.Measure.millilitre,"");
+        Ingridient teaGreen = new Ingridient("teaGreen", 5, sample.OrdersPacage.Measure.gram,"");
+        Ingridient coffee = new Ingridient("coffee", 22, sample.OrdersPacage.Measure.gram,"");
 
-        sample.OrdersPacage.Food omelette = new sample.OrdersPacage.Food("omelette",  "",200,10,"egg",
+        Food omelette = new Food("omelette",  "",200,10,"egg",
                 "cheese","milk","flour");
-        sample.OrdersPacage.Food eggsWithCheese = new sample.OrdersPacage.Food("eggs with cheese", "very testy",
+        Food eggsWithCheese = new Food("eggs with cheese", "very testy",
                 300, 5, "egg","cheese");
 
-        sample.OrdersPacage.Food pancake = new sample.OrdersPacage.Food("pancake","",-500,-15,"egg",
+        Food pancake = new Food("pancake","",-500,-15,"egg",
                 "milk","sugar");
-        sample.OrdersPacage.Food espresso = new sample.OrdersPacage.Food("espresso","",0,2,"coffee","water");
-        sample.OrdersPacage.Food teaGreenWithMilk = new sample.OrdersPacage.Food("teaGreenWithMilk","",50,3,"teaGreen",
+        Food espresso = new Food("espresso","",0,2,"coffee","water");
+        Food teaGreenWithMilk = new Food("teaGreenWithMilk","",50,3,"teaGreen",
                 "milk");
 
 
 
 
 
-        sample.OrdersPacage.Order order = new sample.OrdersPacage.Order(1,new Date(), sample.OrdersPacage.StatusOrder.accepted,"espresso","pancake" );
-        sample.OrdersPacage.Order order1 = new sample.OrdersPacage.Order(2,new Date(), sample.OrdersPacage.StatusOrder.processed,"TaeGreenMilk","omelette");
-        sample.OrdersPacage.Order order3 = new sample.OrdersPacage.Order(3, new Date(), sample.OrdersPacage.StatusOrder.accepted,"espresso","eggs with cheese");
+        Order order = new Order(1,new Date(), sample.OrdersPacage.StatusOrder.accepted,"espresso","pancake" );
+        Order order1 = new Order(2,new Date(), sample.OrdersPacage.StatusOrder.processed,"TaeGreenMilk","omelette");
+        Order order3 = new Order(3, new Date(), sample.OrdersPacage.StatusOrder.accepted,"espresso","eggs with cheese");
 
-        sample.OrdersPacage.Orders orders = new sample.OrdersPacage.Orders();
-
-        orders.AddOrder(order);
+        //sample.OrdersPacage.Orders orders = new sample.OrdersPacage.Orders();
+        Orders orders = new Orders();
+       orders.AddOrder(order);
         orders.AddOrder(order1);
         orders.AddOrder(order3);
         System.out.println(orders);
@@ -58,7 +56,7 @@ public class Report {
         System.out.println(pancake);
 
 
-
+*/
 
     }
 

@@ -28,7 +28,7 @@ public class Main extends Application {
         primaryStage.getIcons().add(new Image("sample/IMG/ikon.jpg"));
 
         //primaryStage.setResizable(false);
-        root.styleProperty().setValue(" -fx-background-color: lightgrey;  -fx-border-color: white; -fx-border-width: 7px;");
+        root.styleProperty().setValue(" -fx-background-color: white;  -fx-border-color: white; -fx-border-width: 7px;");
 
 
         Menu mn = new Menu("my menu");
@@ -42,7 +42,7 @@ public class Main extends Application {
         mn.getItems().add(mi3);
         mn.getItems().add(quit);
         quit.setOnAction(e-> Platform.exit());
-        mi1.setText("newName");
+        //mi1.setText("newName");
         Label labelmi2 = new Label("counter");
         labelmi2.setLabelFor(labelmi2);
         mi2.setOnAction(new EventHandler<ActionEvent>() {
@@ -57,15 +57,15 @@ public class Main extends Application {
         });
         MenuBar mb = new MenuBar();
         mb.getMenus().add(mn);
-
         /*VBox v = new VBox(mb);
         Scene scn = new Scene(v,480,515);
         primaryStage.setScene(scn);
         primaryStage.show();*/
-
-        primaryStage.setScene(new Scene(root, 480, 515));
-        primaryStage.show();
         ((GridPane)root).getChildren().add(mb);
+
+
+        primaryStage.setScene(new Scene(root, 600, 700));
+        primaryStage.show();
 
     }
 

@@ -1,4 +1,4 @@
-package sample.OrdersPacage;
+package sample.OrdersPackage;
 
 public enum Measure {
     gram,

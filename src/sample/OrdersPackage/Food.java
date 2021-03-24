@@ -1,15 +1,15 @@
-package sample.OrdersPacage;
+package sample.OrdersPackage;
 
 import java.util.ArrayList;
 import java.util.Objects;
 
 public class Food extends ArrayList<String> {
     private String nameFood;
-    ArrayList<sample.OrdersPacage.Ingridient> ingridients;
+    ArrayList<Ingridient> ingridients;
     private String descriptionFood;
     private Integer calories;
     private Integer cookingTimeFood;
-    public static sample.OrdersPacage.Ingridient ingridient;
+    //public static Ingridient ingridient;
 
 
 
@@ -46,11 +46,11 @@ public class Food extends ArrayList<String> {
         this.nameFood = nameFood;
     }
 
-    public  ArrayList<sample.OrdersPacage.Ingridient> getIngridients() {
+    public  ArrayList<Ingridient> getIngridients() {
         return ingridients;
     }
 
-    public void setIngridients(ArrayList<sample.OrdersPacage.Ingridient> ingridients) {
+    public void setIngridients(ArrayList<Ingridient> ingridients) {
         this.ingridients = ingridients;
     }
 
@@ -90,7 +90,7 @@ public class Food extends ArrayList<String> {
         this.cookingTimeFood = food.cookingTimeFood;
 
     }
-    public Food(String nameFood, ArrayList<sample.OrdersPacage.Ingridient> ingridients, String descriptionFood, Integer calories, Integer cookingTimeFood) {
+    public Food(String nameFood, ArrayList<Ingridient> ingridients, String descriptionFood, Integer calories, Integer cookingTimeFood) {
         this.nameFood = nameFood;
         this.setIngridients(ingridients) ;
 

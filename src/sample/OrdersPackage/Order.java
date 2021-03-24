@@ -1,4 +1,4 @@
-package sample.OrdersPacage;
+package sample.OrdersPackage;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -6,7 +6,7 @@ import java.util.Objects;
 
 
 public class Order {
-    public Order(int orderId, Date timeOrder, StatusOrder statusOrder, String... foods) {
+    public Order(int orderId, Date timeOrder, sample.OrdersPacage.StatusOrder statusOrder, String... foods) {
         this.orderId = orderId;
         this.timeOrder = timeOrder;
         this.statusOrder = statusOrder;
@@ -18,12 +18,12 @@ public class Order {
 
 
 
-    int orderId;
+    public int orderId;
     private Date timeOrder;
     private ArrayList<Food> foods;
-    private StatusOrder statusOrder;
+    private sample.OrdersPacage.StatusOrder statusOrder;
 
-    public  Order(int orderId, Date timeOrder, StatusOrder accepted, String espresso, String pancake) {
+    public  Order(int orderId, Date timeOrder, sample.OrdersPacage.StatusOrder accepted, String espresso, String pancake) {
         this.orderId = this.orderId;
         this.timeOrder = this.timeOrder;
         this.statusOrder = statusOrder;
@@ -76,15 +76,15 @@ public class Order {
         return foods;
     }
 
-    public StatusOrder getStatusOrder() {
+    public sample.OrdersPacage.StatusOrder getStatusOrder() {
         return statusOrder;
     }
 
-    public void setStatusOrder(StatusOrder statusOrder) {
+    public void setStatusOrder(sample.OrdersPacage.StatusOrder statusOrder) {
         this.statusOrder = statusOrder;
     }
 
-    private void setFoods(StatusOrder foods) {
+    private void setFoods(sample.OrdersPacage.StatusOrder foods) {
     }
 
 

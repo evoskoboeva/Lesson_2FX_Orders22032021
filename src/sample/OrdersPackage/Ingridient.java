@@ -1,4 +1,4 @@
-package sample.OrdersPacage;
+package sample.OrdersPackage;
 
 import java.util.Objects;
 
@@ -11,12 +11,11 @@ public class Ingridient {
 
     @Override
     public  String toString() {
-        return "Ingridient{" +
-                "nameIngridient='" + nameIngridient + '\'' +
-                ", quantityIngridient=" + (this.quantityIngridient<0?"not correct":this.quantityIngridient) +
-                ", measure=" + measure +
-                ", description='" + descriptionIngridient + '\'' +
-                '}';
+        return
+                "  nameIngridient= " + nameIngridient  +
+                ", quantityIngridient= " + quantityIngridient +
+                ", measure= " + measure +
+                ", description= " + descriptionIngridient  +System.lineSeparator();
     }
 
     @Override
@@ -27,10 +26,7 @@ public class Ingridient {
         return getNameIngridient().equals(that.getNameIngridient()) && getQuantityIngridient().equals(that.getQuantityIngridient()) && getMeasure() == that.getMeasure() && Objects.equals(getDescriptionIngridient(), that.getDescriptionIngridient());
     }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(getNameIngridient(), getQuantityIngridient(), getMeasure(), getDescriptionIngridient());
-    }
+
 
     public String getNameIngridient() {
         return nameIngridient;
@@ -46,7 +42,7 @@ public class Ingridient {
 
     public void setQuantityIngridient(Integer quantityIngridient) {
         if (quantityIngridient < 0) {
-            this.quantityIngridient = -1;
+            this.quantityIngridient = 0;
         } else {
             this.quantityIngridient = quantityIngridient;
         }
@@ -68,7 +64,7 @@ public class Ingridient {
         this.descriptionIngridient = descriptionIngridient;
     }
 
-    public Ingridient(String nameIngridient, Integer quantityIngridient,Measure measure, String descriptionIngridient) {
+    public Ingridient(String nameIngridient, Integer quantityIngridient, Measure measure, String descriptionIngridient) {
         this.nameIngridient = nameIngridient;
         this.setQuantityIngridient(quantityIngridient);
         this.measure = measure;

@@ -17,7 +17,7 @@
 }
 
 .label-header {
-    -fx-font-size: 32pt;
+    -fx-font-size: 12pt;
     -fx-font-family: "Segoe UI Light";
     -fx-text-fill: white;
     -fx-opacity: 1;
@@ -89,10 +89,22 @@
 }
 
 .text-field {
-    -fx-font-size: 40pt;
-        -fx-border-radius: 15;
+    -fx-font-size: 12pt;
+    -fx-border-radius: 15;
+    -fx-background-color: black;
+    -fx-text-fill: white;
+
     -fx-font-family: "Segoe UI Semibold";
 }
+.text-area {
+    -fx-font-size: 12pt;
+    -fx-border-radius: 15;
+    -fx-background-color: black;
+    -fx-text-fill: black;
+
+    -fx-font-family: "Segoe UI Semibold";
+}
+
 
 .button {
     -fx-padding: 2 5 2 5;

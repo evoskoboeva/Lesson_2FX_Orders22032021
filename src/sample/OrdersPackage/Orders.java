@@ -1,4 +1,4 @@
-package sample.OrdersPacage;
+package sample.OrdersPackage;
 
 import java.util.ArrayList;
 
@@ -44,7 +44,7 @@ private ArrayList<Order> orders;
         }
 
     }
-    public void ChangeStatusOrder(int id, StatusOrder statusOrder ) {
+    public void ChangeStatusOrder(int id, sample.OrdersPacage.StatusOrder statusOrder ) {
 
         for (Order order:this.orders ) {
            try {
